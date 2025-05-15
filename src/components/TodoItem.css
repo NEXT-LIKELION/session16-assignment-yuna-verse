@@ -1,0 +1,53 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.todo-item:hover {
+    background-color: #f9f9f9;
+}
+
+.todo-item-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.todo-item-left input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.todo-item-left label {
+    cursor: pointer;
+}
+
+.todo-item-left label.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todo-item-right {
+    display: flex;
+    gap: 4px;
+}
+
+.edit-button,
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #f0f0f0;
+}
